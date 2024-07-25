@@ -1,0 +1,76 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "id": "12345",
+      "name": "EcoRide X1",
+      "desc": "Introducing the EcoRide X1, a top-of-the-line E-bike with a high-efficiency motor and sleek design. Ideal for commuting and leisure rides.",
+      "price": "$999.99",
+      "image": "./image/bikeone.jpg",
+      "rating": {
+        "averageRating": 4.5,
+        "numberOfReviews": 120
+      }
+    },
+    {
+      "id": "67890",
+      "name": "GreenBike Pro",
+      "desc": "The GreenBike Pro offers a durable build and advanced features for both urban and off-road adventures. Perfect for all types of riders.",
+      "price": "$1,299.99",
+      "image": "./image/bikeotwo.jpg",
+
+      "rating": {
+        "averageRating": 4.8,
+        "numberOfReviews": 95
+      }
+    },
+    {
+      "id": "11223",
+      "name": "CityGlide E-Bike",
+      "desc": "Experience the CityGlide E-bike, designed for urban commuting with a focus on comfort and efficiency. Features a lightweight frame and smooth ride.",
+      "price": "$849.99",
+      "image": "./image/bikethree.jpg",
+
+      "rating": {
+        "averageRating": 4.2,
+        "numberOfReviews": 78
+      }
+    },
+    {
+      "id": "44556",
+      "name": "VoltRide Turbo",
+      "desc": "The VoltRide Turbo combines speed and style with a powerful motor and high-capacity battery. Perfect for those who crave performance.",
+      "price": "$1,199.99",
+      "image": "./image/bikefour.jpg",
+
+      "rating": {
+        "averageRating": 4.7,
+        "numberOfReviews": 60
+      }
+    },
+    {
+      "id": "78901",
+      "name": "PowerGlide Z2",
+      "desc": "PowerGlide Z2 offers an exceptional blend of technology and design, featuring a robust frame and advanced electronics for a smooth ride.",
+      "price": "$1,099.99",
+      "image": "./image/bikefive.jpg",
+
+      "rating": {
+        "averageRating": 4.6,
+        "numberOfReviews": 85
+      }
+    },
+    {
+      "id": "23456",
+      "name": "UrbanSwift E",
+      "desc": "UrbanSwift E provides a compact design with excellent maneuverability and efficiency, ideal for city commuting and short trips.",
+      "price": "$749.99",
+      "image": "./image/bikesix.jpg",
+
+      "rating": {
+        "averageRating": 4.3,
+        "numberOfReviews": 102
+      }
+    }
+  ]
+}
