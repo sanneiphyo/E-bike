@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <h1 className="text-4xl sm:text-6xl font-bold text-center sm:text-left">EcoMotion</h1>
         <h1 className="text-4xl sm:text-6xl font-bold text-center sm:text-left">E-bike</h1>
         <p className="text-xl sm:text-xl mt-3 text-center sm:text-left">
-        Experience the freedom of effortless commuting with our e-bikes—combining eco-friendly technology, 
+        Experience the freedom of effortless commuting with our e-bikes combining eco-friendly technology, 
         cost savings, 
         and a healthier lifestyle in one sleek ride. Discover how easy and enjoyable your daily travels can be!     
         </p>
