@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         <h1 className="text-4xl sm:text-6xl font-bold text-center sm:text-left">EcoMotion</h1>
         <h1 className="text-4xl sm:text-6xl font-bold text-center sm:text-left">E-bike</h1>
         <p className="text-xl sm:text-2xl mt-3 text-center sm:text-left">
-          Experience powerride with our efficient electric motors
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusamus, tenetur eum magni rem aspernatur ex quae excepturi, non molestiae numquam saepe repudiandae sint iusto. Voluptates officia illum impedit voluptatem?
         </p>
         <div className="flex justify-center sm:justify-start">
          <Link to ="/product">

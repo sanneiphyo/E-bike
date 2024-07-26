@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Button, List, Rate } from 'antd';
 import data from "../assets/file.json";
 import bikeone from "../assets/image/bikeone.jpg";
@@ -7,6 +7,7 @@ import bikethree from "../assets/image/bikethree.jpg";
 import bikefour from "../assets/image/bikefour.jpg";
 import bikefive from "../assets/image/bikefive.jpg";
 import bikesix from "../assets/image/bikesix.jpg";
+import { useItem } from '../context/Context';
 
 interface Rating {
   averageRating: number;
@@ -27,10 +28,9 @@ interface Data {
   data: Item[];
 }
 
-
 const imageMap: { [key: string]: string } = {
   "bikeone.jpg": bikeone,
-  "biketwo.jpg" :biketwo,
+  "biketwo.jpg": biketwo,
   "bikethree.jpg": bikethree,
   "bikefour.jpg": bikefour,
   "bikefive.jpg": bikefive,
@@ -39,12 +39,17 @@ const imageMap: { [key: string]: string } = {
 
 const App: React.FC = () => {
   const initialData: Data = data as Data;
-  const [selectedItem, setSelectedItem] = useState<Item>(initialData.data[0]);
+  const { setSelectedItem, addToCart } = useItem();
+  const [selectedItem, setLocalSelectedItem] = React.useState<Item>(initialData.data[0]);
 
   const handleItem = (item: Item) => {
-    setSelectedItem(item);
+    setLocalSelectedItem(item);
   };
 
+  const handleBuyNow = () => {
+    setSelectedItem(selectedItem);
+    addToCart(selectedItem);
+  };
 
   const imageSrc = imageMap[selectedItem.image.split('/').pop() || ""];
 
@@ -54,10 +59,9 @@ const App: React.FC = () => {
         <img src={imageSrc} alt={selectedItem.name} className="w=[5rem] h-[20rem] rounded-md " />
         <p className="mt-2">{selectedItem.desc}</p>
 
-        <Button type="primary" className="bg-gray-500 mt-4 rounded-xl">
-            Buy Now
-          </Button>
-
+        <Button type="primary" className="bg-gray-500 mt-4 rounded-xl" onClick={handleBuyNow}>
+          Buy Now
+        </Button>
       </div>
       <div className='w-[30rem] border rounded-md px-5 sm:ml-3 overflow-y-auto mt-3 h-[25rem]'>
         <List
