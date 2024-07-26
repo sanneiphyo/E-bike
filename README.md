@@ -37,6 +37,7 @@ framework for custom designs.
 
 -Install dependencies: npm install
 
+#npm update, if it is needed
 
 -Start the development server: npm run dev
 
