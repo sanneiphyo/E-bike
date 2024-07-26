@@ -14,6 +14,8 @@
 -TypeScript: Superset of JavaScript
 that provides static type definitions.
 
+-useContext - for manage the state and access value without prop drilling 
+
 -react-router-dom: Declarative routing for React.js.
 
 -react-icons: Collection of popular icons for React applications.
