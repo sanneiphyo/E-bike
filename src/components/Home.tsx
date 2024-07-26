@@ -9,8 +9,10 @@ const Home: React.FC = () => {
       <div className="mt-8 sm:mt-0 sm:w-1/2">
         <h1 className="text-4xl sm:text-6xl font-bold text-center sm:text-left">EcoMotion</h1>
         <h1 className="text-4xl sm:text-6xl font-bold text-center sm:text-left">E-bike</h1>
-        <p className="text-xl sm:text-2xl mt-3 text-center sm:text-left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo accusamus, tenetur eum magni rem aspernatur ex quae excepturi, non molestiae numquam saepe repudiandae sint iusto. Voluptates officia illum impedit voluptatem?
+        <p className="text-xl sm:text-xl mt-3 text-center sm:text-left">
+        Experience the freedom of effortless commuting with our e-bikes—combining eco-friendly technology, 
+        cost savings, 
+        and a healthier lifestyle in one sleek ride. Discover how easy and enjoyable your daily travels can be!     
         </p>
         <div className="flex justify-center sm:justify-start">
          <Link to ="/product">
