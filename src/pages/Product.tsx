@@ -30,7 +30,7 @@ interface Data {
 
 const imageMap: { [key: string]: string } = {
   "bikeone.jpg": bikeone,
-  "biketwo.jpg": biketwo,
+  "biketwo.jpg" :biketwo,
   "bikethree.jpg": bikethree,
   "bikefour.jpg": bikefour,
   "bikefive.jpg": bikefive,
