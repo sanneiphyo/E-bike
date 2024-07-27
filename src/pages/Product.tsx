@@ -54,16 +54,16 @@ const App: React.FC = () => {
   const imageSrc = imageMap[selectedItem.image.split('/').pop() || ""];
 
   return (
-    <div className="p-4 flex-reverse sm:flex">
-      <div className='w-[40rem] sm:ml-[8rem] mt-14'>
-        <img src={imageSrc} alt={selectedItem.name} className="w=[5rem] h-[20rem] rounded-md " />
+    <div className="p-4 flex flex-col-reverse sm:flex-row">
+      <div className='w-full sm:w-[40rem] sm:ml-[8rem] mt-4 sm:mt-14'>
+        <img src={imageSrc} alt={selectedItem.name} className="w-full h-auto sm:h-[20rem] rounded-md" />
         <p className="mt-2">{selectedItem.desc}</p>
 
         <Button type="primary" className="bg-gray-500 mt-4 rounded-xl" onClick={handleBuyNow}>
           Buy Now
         </Button>
       </div>
-      <div className='w-[30rem] border rounded-md px-5 sm:ml-3 overflow-y-auto mt-3 h-[25rem]'>
+      <div className='w-full sm:w-[30rem] border rounded-md px-5 sm:ml-3 overflow-y-auto mt-3 sm:mt-0 h-[25rem]'>
         <List
           className="cursor-pointer"
           itemLayout="vertical"
@@ -73,7 +73,7 @@ const App: React.FC = () => {
               <List.Item.Meta
                 title={<a href="#" >{item.name}</a>}
               />
-              <div className="mt-2 flex">
+              <div className="mt-2 flex flex-col sm:flex-row justify-between">
                 <div className="text-lg font-semibold">{item.price}</div>
                 <div className="mt-2 flex items-center">
                   <Rate disabled defaultValue={item.rating.averageRating} />
