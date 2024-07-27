@@ -55,9 +55,9 @@ const App: React.FC = () => {
 
   return (
     <div className="p-4 flex flex-col sm:flex-row">
-      <div className='sm:w-[40rem] sm:ml-[8rem] mt-14'>
-        <img src={imageSrc} alt={selectedItem.name} className="w-[25rem] h-[20rem] rounded-md" />
-        <p className="mt-2 text-lg">{selectedItem.desc}</p>
+      <div className='sm:w-[40rem] sm:ml-[4rem] mt-14'>
+        <img src={imageSrc} alt={selectedItem.name} className="w-[25rem] lg:ml-[5rem] h-[20rem] rounded-md" />
+        <p className="mt-2 ">{selectedItem.desc}</p>
 
         <Button type="primary" className="bg-gray-500 mt-4 rounded-xl" onClick={handleBuyNow}>
           Buy Now
