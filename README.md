@@ -3,7 +3,7 @@
 
 #Overview
 
--EcoMotion is a modern web application showcasing a range of e-bikes. Built using React and TypeScript, the project features dynamic routing with react-router-dom, stylish icons from react-icons, and a sleek UI with Ant Design (antd) and Tailwind CSS. Performance is optimized with hooks such as useCallback.
+EcoMotion is a modern web application showcasing a range of e-bikes. Built using React and TypeScript, the project features dynamic routing with react-router-dom, stylish icons from react-icons, and a sleek UI with Ant Design (antd) and Tailwind CSS. Performance is optimized with hooks such as useCallback.
 
 
 #Technologies Used
